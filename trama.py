@@ -6,8 +6,8 @@ from datetime import datetime
 #
 puntos_df = pd.read_csv('./results/puntos_generados.csv')
 
-finca_id = 367
-lote_id = 1
+finca_id = 646     #! Reemplazar por el ID de la finca
+lote_id = 12199    #! Reemplazar por el ID del lote
 
 fecha = datetime.now().strftime('%Y-%m-%d')
 
@@ -35,6 +35,6 @@ nuevo_df = pd.DataFrame({
     'finca_id': [finca_id] * len(puntos_df) 
 })
 
-nuevo_df.to_csv('./results/subir_spots.csv', index=False, sep=';')
+nuevo_df.to_csv('./results/trama_spots.csv', index=False)
 
-print("Se han generado spots y se han guardado en 'spots.csv'")
+print("Se han generado spots y se han guardado en 'subir_spots.csv'")

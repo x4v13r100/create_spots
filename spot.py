@@ -4,7 +4,10 @@ import pandas as pd
 
 
 #! Se necesita el poligono.csv
-#! conseguir los datosde la tabla puntos lotes => lat,lng
+#! conseguir los datos de la tabla puntos lotes => lat,lng y almacenarlo en file/poligono.csv
+# SELECT lat,lng
+# FROM puntos_lotes
+# WHERE lote_id = 
 
 # Carga el polígono desde el archivo CSV
 polygon_csv = "./file/poligono.csv"
